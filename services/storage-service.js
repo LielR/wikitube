@@ -10,7 +10,7 @@ function loadFromStorage(key) {
 }
 
 function SaveDataToLocalStorage(newData) {
-  var x = JSON.parse(localStorage.getItem("songsDB") || "[]");
+  var x = JSON.parse(localStorage.getItem("wikiDB") || "[]");
   x.push(newData);
-  localStorage.setItem('songsDB', JSON.stringify(x));
+  localStorage.setItem('wikiDB', JSON.stringify(x));
 }
