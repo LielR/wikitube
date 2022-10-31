@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WikiTube - Liel Raui</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/logo.png">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>
+            <a href="">
+            <img class="logo-header" src="./imgs/logo.png"/></a>
+        </h1>
+    
+        <input onchange="onSearch(this.value)" list="options" id="video-option" placeholder="Search...">
+    </header>
+    <main>
+        <div class="videos-container">
+
+        </div>
+        
+        <div class="player-container">
+            
+            <iframe width="520" height="315" src="https://www.youtube.com/embed/uh885TBKek8" allow="autoplay;">
+            </iframe>
+            <div class="wiki-container">
+
+            </div>
+        </div>
+    </main>
+    <script src="lib/axios.js"></script>
+    <script src="services/storage-service.js"></script>
+    <script src="services/wiki-service.js"></script>
+    <script src="wiki-controller.js"></script>
+</body>
+
+</html>
