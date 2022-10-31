@@ -29,6 +29,11 @@
     grid-template-rows: repeat(1, 670px);
     justify-content: space-between;
   }
+  .video > p{
+    margin-left: 30px;
+    font-size: 20px;
+    color: orange;
+  }
   .logo-header{
     margin-left: 30px;
   }
@@ -36,13 +41,14 @@
     display: flex;
     margin: 35px 0;
     color: #fafafa;
-    background-color: rgba(48, 48, 48, 0.852);
+    background-color: rgba(35, 35, 35, 0.947);
     border-radius: 3px;
     margin-left: 30px;
     cursor: pointer;
+    align-items: center;
   }
   .video:hover{
-    background-color: tomato;
+    background-color: rgba(184, 184, 184, 0.432);
     transition: .9s;
   }
   .hidden{
