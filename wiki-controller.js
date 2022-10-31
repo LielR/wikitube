@@ -41,11 +41,7 @@ function renderWiki(wiki) {
 <h3 class="time">${wiki.query.search[0].timestamp}</h3>
 <p class="snippet">${wiki.query.search[0].snippet}</p>
 `
-
     elContain.innerHTML = strHTML
-
-
-
 }
 
 function onSearch(value) {

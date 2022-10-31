@@ -17,7 +17,7 @@ function getVideos(value = '') {
 }
 
 function getWiki(value) {
-    return axios.get(`https://en.wikipedia.org/w/api.php?&origin=*&action=query&list=search&srsearch=beatles&format=json`)
+    return axios.get(`https://en.wikipedia.org/w/api.php?&origin=*&action=query&list=search&srsearch=${value}&format=json`)
         .then(res => res.data)
         .catch(err => {
             console.log('Cannot get ans', err);
